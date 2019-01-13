@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    // シンバルの音源ファイルを指定
+    let cymbalPath =
+        Bundle.main.bundleURL.appendingPathComponent("cymbal.mp3")
+    
+    // シンバル用のプレイヤーインスタンスを作成
+    var cymbalPlayer = AVAudioPlayer()
 }
 
