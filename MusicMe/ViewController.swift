@@ -71,4 +71,10 @@ class ViewController: UIViewController {
         }
     }
     
+    // Stopボタンがタップされた時の処理
+    @IBAction func stop(_ sender: Any) {
+        // バックミュージック停止
+        backmusicPlayer.stop()
+    }
+    
 }
