@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_pattern" translatesAutoresizingMaskIntoConstraints="NO" id="O8s-wH-Lq2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_pattern" translatesAutoresizingMaskIntoConstraints="NO" id="O8s-wH-Lq2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVa-hO-fKu">
                                 <rect key="frame" x="6" y="102" width="150" height="150"/>
@@ -46,6 +45,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O8s-wH-Lq2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VcC-Pc-j7o"/>
+                            <constraint firstItem="O8s-wH-Lq2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zwu-lp-2Fu"/>
+                            <constraint firstItem="O8s-wH-Lq2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="buv-IN-mdb"/>
+                            <constraint firstItem="O8s-wH-Lq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xJF-Gd-lbT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
