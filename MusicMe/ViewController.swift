@@ -35,5 +35,22 @@ class ViewController: UIViewController {
         }
     }
     
+    // ギターの音源ファイルを指定
+    let guitarPath = Bundle.main.bundleURL.appendingPathComponent("guitar.mp3")
+    
+    // ギター用のプレイヤーインスタンスを作成
+    var guitarPlayer = AVAudioPlayer()
+    
+    // ギターがタップされた時の処理
+    @IBAction func guitar(_ sender: Any) {
+        do {
+            // ギター用のプレイヤーに、音源ファイル名を指定
+            guitarPlayer = try AVAudioPlayer(contentsOf: guitarPath, fileTypeHint: nil)
+            guitarPlayer.play()
+        } catch {
+            print("ギターで、エラーが発生しました")
+        }
+    }
+    
 }
 
